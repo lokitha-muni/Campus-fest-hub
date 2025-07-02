@@ -2,7 +2,6 @@
 
 A visually stunning, galaxy-themed website for college fest and event announcements, designed to be hosted on AWS S3 with serverless backend functionality.
 
-![Campus Fest Hub Screenshot](screenshots/homepage.png)
 ![index_page1](https://github.com/user-attachments/assets/263cda2f-82e9-40e5-9f94-4e82b41169ec)
 
 ## Table of Contents
@@ -32,7 +31,6 @@ A visually stunning, galaxy-themed website for college fest and event announceme
 
 ## Architecture
 
-![Architecture Diagram](diagrams/college-fest-archi.png)
 ![College-fest-archi](https://github.com/user-attachments/assets/d6835c26-401f-4651-8b94-5578d30d0ef0)
 
 The Campus Fest Hub uses a serverless architecture with the following components:
