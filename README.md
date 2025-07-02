@@ -1,6 +1,6 @@
 # Campus Fest Hub
 
-A visually stunning, galaxy-themed website for college fest and event announcements, designed to be hosted on AWS S3 with serverless backend functionality.
+Campus Fest Hub is a college event announcement website that allows students to explore upcoming campus events, view detailed information, register for events, and subscribe for future updates. Built with a galaxy-themed UI, the platform includes a secure admin login for authorized users to add new events. The entire backend is powered by AWS services like Lambda, API Gateway, and S3, making the system fully serverless and scalable.
 
 ![index_page1](https://github.com/user-attachments/assets/263cda2f-82e9-40e5-9f94-4e82b41169ec)
 
