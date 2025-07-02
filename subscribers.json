@@ -1,0 +1,20 @@
+[
+  {
+    "id": "sub-001",
+    "email": "john.doe@example.com",
+    "timestamp": "2025-07-01T10:15:00Z",
+    "status": "confirmed"
+  },
+  {
+    "id": "sub-002",
+    "email": "jane.smith@example.com",
+    "timestamp": "2025-07-01T11:30:00Z",
+    "status": "confirmed"
+  },
+  {
+    "id": "sub-003",
+    "email": "student123@university.edu",
+    "timestamp": "2025-06-28T14:45:00Z",
+    "status": "confirmed"
+  }
+]

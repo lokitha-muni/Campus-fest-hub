@@ -1,0 +1,68 @@
+[
+  {
+    "id": "1",
+    "name": "Cosmic Code Hackathon",
+    "date": "2025-08-15",
+    "time": "09:00",
+    "venue": "Computer Science Building",
+    "type": "technical",
+    "shortDescription": "A 24-hour coding marathon where teams compete to build innovative solutions to real-world problems.",
+    "description": "Join us for the most anticipated hackathon of the year! The Cosmic Code Hackathon is a 24-hour coding marathon where teams of up to 4 students will compete to build innovative solutions to real-world problems. Participants will have access to mentors from leading tech companies, workshops on cutting-edge technologies, and the chance to win amazing prizes including internship opportunities and tech gadgets. Whether you're a coding expert or just starting out, this event offers a great opportunity to learn, network, and showcase your skills. Food and refreshments will be provided throughout the event. Don't miss this chance to turn your ideas into reality!",
+    "image": "assets/cosmic_hackathon_img.avif"
+  },
+  {
+    "id": "2",
+    "name": "Stellar Sounds Music Festival",
+    "date": "2025-07-25",
+    "time": "18:00",
+    "venue": "Campus Amphitheater",
+    "type": "cultural",
+    "shortDescription": "A night of music and performances featuring talented student bands and professional artists.",
+    "description": "Get ready for an unforgettable night under the stars at the Stellar Sounds Music Festival! This year's lineup features incredible student bands from across campus alongside professional artists who will light up the stage with electrifying performances. From rock and pop to jazz and classical, there's something for every music lover. The festival will also feature food stalls offering a variety of cuisines, art installations created by the Fine Arts department, and interactive music workshops. Bring your friends, bring your energy, and be prepared to dance the night away at the most anticipated musical event of the year!",
+    "image": "assets/stellar_sound_img.avif"
+  },
+  {
+    "id": "3",
+    "name": "Galactic Games Tournament",
+    "date": "2025-09-05",
+    "time": "10:00",
+    "venue": "University Sports Complex",
+    "type": "sports",
+    "shortDescription": "The culmination of our inter-college sports tournament with competitions in multiple disciplines.",
+    "description": "The Galactic Games Tournament is the ultimate sporting event of the academic year! Watch as the best athletes from colleges across the region compete for glory in multiple disciplines including basketball, volleyball, soccer, tennis, swimming, and athletics. The tournament will feature both individual and team events, with exciting prizes for the winners. Come support your college team and witness displays of extraordinary talent, determination, and sportsmanship. The event will include opening and closing ceremonies, medal presentations, and special performances by the college cheerleading squad. Food and refreshment stalls will be available throughout the venue. Don't miss this celebration of athletic excellence!",
+    "image": "assets/galactic_games_img.avif"
+  },
+  {
+    "id": "4",
+    "name": "Nebula Career Expo",
+    "date": "2025-10-12",
+    "time": "09:00",
+    "venue": "Student Center",
+    "type": "seminar",
+    "shortDescription": "Connect with over 50 companies looking to recruit talented students for internships and full-time positions.",
+    "description": "Launch your career into orbit at the Nebula Career Expo! This premier networking event brings together over 50 top companies from various industries who are actively looking to recruit talented students for internships and full-time positions. Participating companies include tech giants, financial institutions, healthcare organizations, marketing agencies, and many more. Come prepared with your resume and professional attire for on-the-spot interviews. The expo will also feature panel discussions with industry experts, resume review sessions, LinkedIn profile optimization workshops, and mock interviews. This is your chance to make meaningful connections that could shape your professional future. Don't miss this opportunity to take the first step towards your dream career!",
+    "image": "assets/nebula_career_img.avif"
+  },
+  {
+    "id": "5",
+    "name": "Quantum Quest Workshop Series",
+    "date": "2025-08-28",
+    "time": "14:00",
+    "venue": "Science Building Auditorium",
+    "type": "workshop",
+    "shortDescription": "A series of hands-on workshops exploring cutting-edge technologies like AI, VR, and quantum computing.",
+    "description": "Embark on a journey of discovery with the Quantum Quest Workshop Series! This innovative program offers hands-on experience with cutting-edge technologies that are shaping our future. The series includes workshops on Artificial Intelligence and Machine Learning, Virtual and Augmented Reality, Quantum Computing, Blockchain Technology, and Robotics. Each workshop will be led by industry experts and faculty researchers who will guide participants through practical exercises and real-world applications. Whether you're a beginner curious about these technologies or an advanced student looking to deepen your knowledge, these workshops are designed to be accessible and engaging for all skill levels. Participants will receive certificates of completion and exclusive access to online resources to continue their learning journey. Space is limited, so register early to secure your spot in this exciting exploration of tomorrow's technologies!",
+    "image": "assets/quantum_quest_img.avif"
+  },
+  {
+    "id": "6",
+    "name": "Cosmic Cultural Night",
+    "date": "2025-11-15",
+    "time": "17:30",
+    "venue": "Main Auditorium",
+    "type": "cultural",
+    "shortDescription": "A celebration of diversity featuring performances, cuisine, and art from cultures around the world.",
+    "description": "Experience a universe of cultures at the Cosmic Cultural Night! This vibrant celebration showcases the rich diversity of our campus community through performances, cuisine, and art from around the world. The evening will feature traditional and contemporary dance performances, musical showcases, fashion shows displaying traditional attire, and theatrical presentations that highlight cultural stories and traditions. Visitors can explore international food stalls offering authentic dishes from various countries, browse art exhibitions featuring works that reflect different cultural perspectives, and participate in interactive workshops on traditional crafts and practices. This event is a wonderful opportunity to learn about and appreciate the many cultures that make our campus community so unique and vibrant. Join us for an evening of global celebration that promises to be both entertaining and enlightening!",
+    "image": "assets/cosmic_night_img.avif"
+  }
+]

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Event Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #8e44ad;
+            text-align: center;
+        }
+        .event-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .event-link {
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #333;
+        }
+        .event-link:hover {
+            background-color: #e0e0e0;
+        }
+        .note {
+            background-color: #ffffcc;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Test Event Links</h1>
+    <p>Click on the links below to test the event details page:</p>
+    
+    <div class="event-links">
+        <a href="event.html?id=1" class="event-link">Event 1: Cosmic Code Hackathon</a>
+        <a href="event.html?id=2" class="event-link">Event 2: Stellar Sounds Music Festival</a>
+        <a href="event.html?id=3" class="event-link">Event 3: Galactic Games Tournament</a>
+        <a href="event.html?id=4" class="event-link">Event 4: Nebula Career Expo</a>
+        <a href="event.html?id=5" class="event-link">Event 5: Quantum Quest Workshop Series</a>
+        <a href="event.html?id=6" class="event-link">Event 6: Cosmic Cultural Night</a>
+    </div>
+    
+    <div class="note">
+        <p><strong>Note:</strong> This page is for testing purposes only. It helps verify that the event details page works correctly with different event IDs.</p>
+        <p>If you see "Event ID not provided" or "Event not found" errors when clicking these links, there might be an issue with how the event IDs are handled.</p>
+    </div>
+    
+    <p><a href="index.html">Back to Home</a></p>
+</body>
+</html>

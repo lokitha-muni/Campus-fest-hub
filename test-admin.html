@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #8e44ad;
+        }
+        .test-section {
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        button {
+            background: linear-gradient(135deg, #8e44ad, #3498db);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+        pre {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .result {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e8f4f8;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Admin Dashboard Test</h1>
+    <p>This page helps diagnose issues with the admin dashboard.</p>
+    
+    <div class="test-section">
+        <h2>1. Session Storage Test</h2>
+        <button onclick="testSessionStorage()">Test Session Storage</button>
+        <div id="session-result" class="result"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>2. Events JSON Test</h2>
+        <button onclick="testEventsJson()">Test Events JSON</button>
+        <div id="events-result" class="result"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>3. Subscribers JSON Test</h2>
+        <button onclick="testSubscribersJson()">Test Subscribers JSON</button>
+        <div id="subscribers-result" class="result"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>4. Login Simulation</h2>
+        <button onclick="simulateLogin()">Simulate Login</button>
+        <div id="login-result" class="result"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>5. Go to Admin Dashboard</h2>
+        <p>Click the button below to go to the admin dashboard:</p>
+        <button onclick="window.location.href='admin-dashboard.html'">Go to Admin Dashboard</button>
+    </div>
+    
+    <script>
+        function showResult(elementId, content, isJson = false) {
+            const element = document.getElementById(elementId);
+            element.style.display = 'block';
+            
+            if (isJson && typeof content === 'object') {
+                element.innerHTML = '<pre>' + JSON.stringify(content, null, 2) + '</pre>';
+            } else {
+                element.textContent = content;
+            }
+        }
+        
+        function testSessionStorage() {
+            try {
+                // Test if sessionStorage is available
+                sessionStorage.setItem('test', 'test');
+                sessionStorage.removeItem('test');
+                
+                // Check admin login status
+                const isLoggedIn = sessionStorage.getItem('adminLoggedIn') === 'true';
+                
+                showResult('session-result', `SessionStorage is working correctly. Admin login status: ${isLoggedIn ? 'Logged in' : 'Not logged in'}`);
+            } catch (error) {
+                showResult('session-result', `Error testing sessionStorage: ${error.message}`);
+            }
+        }
+        
+        async function testEventsJson() {
+            try {
+                const response = await fetch('events.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                
+                const events = await response.json();
+                showResult('events-result', events, true);
+            } catch (error) {
+                showResult('events-result', `Error fetching events.json: ${error.message}`);
+            }
+        }
+        
+        async function testSubscribersJson() {
+            try {
+                const response = await fetch('subscribers.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                
+                const subscribers = await response.json();
+                showResult('subscribers-result', subscribers, true);
+            } catch (error) {
+                showResult('subscribers-result', `Error fetching subscribers.json: ${error.message}`);
+            }
+        }
+        
+        function simulateLogin() {
+            try {
+                sessionStorage.setItem('adminLoggedIn', 'true');
+                showResult('login-result', 'Login simulated successfully. You can now go to the admin dashboard.');
+            } catch (error) {
+                showResult('login-result', `Error simulating login: ${error.message}`);
+            }
+        }
+    </script>
+</body>
+</html>

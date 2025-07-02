@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Campus Fest Hub</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="stars-container">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </div>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i class="fas fa-galaxy"></i>
+                    <h1>Campus Fest Hub</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="admin-dashboard.html" class="active">Dashboard</a></li>
+                    <li><a href="#" id="logout-btn">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="admin-dashboard">
+        <div class="container">
+            <h2 class="section-title">Admin Dashboard</h2>
+            
+            <div class="dashboard-content">
+                <div class="admin-sidebar">
+                    <ul>
+                        <li class="active" data-tab="add-event">Add New Event</li>
+                        <li data-tab="manage-events">Manage Events</li>
+                        <li data-tab="subscribers">Subscribers</li>
+                    </ul>
+                </div>
+                
+                <div class="admin-content">
+                    <div id="add-event" class="tab-content active">
+                        <h3>Add New Event</h3>
+                        <form id="add-event-form">
+                            <div class="form-group">
+                                <label for="event-name">Event Name</label>
+                                <input type="text" id="event-name" required>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="event-date">Date</label>
+                                    <input type="date" id="event-date" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="event-time">Time</label>
+                                    <input type="time" id="event-time" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="event-venue">Venue</label>
+                                <input type="text" id="event-venue" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="event-type">Event Type</label>
+                                <select id="event-type" required>
+                                    <option value="">Select Event Type</option>
+                                    <option value="cultural">Cultural</option>
+                                    <option value="technical">Technical</option>
+                                    <option value="sports">Sports</option>
+                                    <option value="workshop">Workshop</option>
+                                    <option value="seminar">Seminar</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="event-short-desc">Short Description</label>
+                                <textarea id="event-short-desc" rows="2" maxlength="150" required></textarea>
+                                <small>Max 150 characters</small>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="event-description">Detailed Description</label>
+                                <textarea id="event-description" rows="5" required></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Event Image</label>
+                                <div class="image-input-options">
+                                    <div class="input-option">
+                                        <input type="radio" id="image-url-option" name="image-option" value="url" checked>
+                                        <label for="image-url-option">Image URL</label>
+                                    </div>
+                                    <div class="input-option">
+                                        <input type="radio" id="image-file-option" name="image-option" value="file">
+                                        <label for="image-file-option">Upload Image</label>
+                                    </div>
+                                </div>
+                                
+                                <div id="image-url-input" class="image-input">
+                                    <input type="url" id="event-image-url" placeholder="https://example.com/image.jpg">
+                                </div>
+                                
+                                <div id="image-file-input" class="image-input" style="display: none;">
+                                    <input type="file" id="event-image-file" accept="image/jpeg, image/png, image/avif">
+                                    <small>Accepted formats: JPG, PNG, AVIF</small>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn glow-btn">Add Event</button>
+                        </form>
+                        <div id="add-event-message" class="message"></div>
+                    </div>
+                    
+                    <div id="manage-events" class="tab-content">
+                        <h3>Manage Events</h3>
+                        <div id="events-list">
+                            <!-- Events will be loaded here dynamically -->
+                            <div class="loading">
+                                <div class="spinner"></div>
+                                <p>Loading events...</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="subscribers" class="tab-content">
+                        <h3>Subscribers</h3>
+                        <div id="subscribers-list">
+                            <!-- Subscribers will be loaded here dynamically -->
+                            <div class="loading">
+                                <div class="spinner"></div>
+                                <p>Loading subscribers...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Campus Fest Hub</h3>
+                    <p>Bringing campus events to life</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="admin-dashboard.html">Dashboard</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Campus Fest Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/stars.js"></script>
+    <script src="js/admin-dashboard.js"></script>
+</body>
+</html>

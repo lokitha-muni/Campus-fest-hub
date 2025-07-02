@@ -1,0 +1,34 @@
+[
+  {
+    "id": "reg-001",
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "eventName": "Cosmic Code Hackathon",
+    "eventId": "1",
+    "timestamp": "2025-07-01T10:30:00Z"
+  },
+  {
+    "id": "reg-002",
+    "name": "Jane Smith",
+    "email": "jane.smith@example.com",
+    "eventName": "Stellar Sounds Music Festival",
+    "eventId": "2",
+    "timestamp": "2025-07-01T11:45:00Z"
+  },
+  {
+    "id": "reg-003",
+    "name": "Alex Johnson",
+    "email": "alex.j@university.edu",
+    "eventName": "Galactic Games Tournament",
+    "eventId": "3",
+    "timestamp": "2025-07-01T14:20:00Z"
+  },
+  {
+    "id": "reg-004",
+    "name": "Maria Garcia",
+    "email": "maria.g@example.com",
+    "eventName": "Quantum Quest Workshop Series",
+    "eventId": "5",
+    "timestamp": "2025-07-01T15:10:00Z"
+  }
+]
